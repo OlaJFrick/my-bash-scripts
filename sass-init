@@ -1,0 +1,20 @@
+mkdir sass
+cd sass
+mkdir abstract base components layout pages
+cd abstract
+touch _functions.scss _mixins.scss _variables.scss
+cd ..
+cd base
+touch _animations.scss _base.scss _typography.scss _utilites.scss
+cd ..
+touch main.scss
+echo "
+@import "abstracts/functions";
+@import "abstracts/mixins";
+@import "abstracts/variables";
+
+@import "base/animations";
+@import "base/base";
+@import "base/typography";
+@import "base/utilities";
+" > main.scss
