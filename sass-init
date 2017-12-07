@@ -1,14 +1,14 @@
 mkdir sass
 cd sass
-mkdir abstract base components layout pages
-cd abstract
+mkdir abstracts base components layout pages
+cd abstracts
 touch _functions.scss _mixins.scss _variables.scss
 cd ..
 cd base
 touch _animations.scss _base.scss _typography.scss _utilites.scss
 cd ..
 touch main.scss
-echo "
+echo '
 @import "abstracts/functions";
 @import "abstracts/mixins";
 @import "abstracts/variables";
@@ -16,5 +16,5 @@ echo "
 @import "base/animations";
 @import "base/base";
 @import "base/typography";
-@import "base/utilities";
-" > main.scss
+@import "base/utilites";
+' > main.scss
